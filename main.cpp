@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 #include "student.h"
 
 namespace inryoeun2693255
@@ -36,10 +37,10 @@ int main()
         std::exit(1);
     }
     std::ofstream fout{ "out.txt" };
-    std::string fileName;
-    std::cout << "Enter file name: ";
-    std::cin >> fileName; fileName = fileName + ".txt";
-    fout.open(fileName);
+    //std::string fileName;
+    //std::cout << "Enter file name: ";
+    //std::cin >> fileName; fileName = fileName + ".txt";
+    //fout.open(fileName);
     if(fout.fail())
     {
         std::cout << "Output file opening failed\n";
